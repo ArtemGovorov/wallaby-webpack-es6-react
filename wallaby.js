@@ -32,6 +32,10 @@ module.exports = function (wallaby) {
 
     setup: function () {
       window.__moduleBundler.loadTests();
+    },
+
+    hints: {
+      ignoreCoverage: /ignore coverage/
     }
   };
 };
